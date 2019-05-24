@@ -1,0 +1,10 @@
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.csprojAssemblyReference.cache
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.FrmJogoDaVelha.resources
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.csproj.GenerateResource.cache
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\bin\Debug\ProjetoJVelha.exe.config
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\bin\Debug\ProjetoJVelha.exe
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\bin\Debug\ProjetoJVelha.pdb
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.Properties.Resources.resources
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.csproj.CoreCompileInputs.cache
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.exe
+C:\Projetos\src\ProjetoJVelha\ProjetoJVelha\obj\Debug\ProjetoJVelha.pdb
