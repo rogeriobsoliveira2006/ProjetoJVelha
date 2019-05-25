@@ -47,15 +47,15 @@
             this.btnIniciar = new System.Windows.Forms.Button();
             this.gbxPlacar = new System.Windows.Forms.GroupBox();
             this.lblPJogador2 = new System.Windows.Forms.Label();
-            this.lblPJogador = new System.Windows.Forms.Label();
+            this.lblPJogador1 = new System.Windows.Forms.Label();
             this.gbxOpcoes = new System.Windows.Forms.GroupBox();
             this.rbtO = new System.Windows.Forms.RadioButton();
             this.rbtX = new System.Windows.Forms.RadioButton();
             this.gbxJogadores = new System.Windows.Forms.GroupBox();
             this.txtJogador2 = new System.Windows.Forms.TextBox();
-            this.txtJogador = new System.Windows.Forms.TextBox();
+            this.txtJogador1 = new System.Windows.Forms.TextBox();
             this.lblJogador2 = new System.Windows.Forms.Label();
-            this.lblJogador = new System.Windows.Forms.Label();
+            this.lblJogador1 = new System.Windows.Forms.Label();
             this.pnlBottom.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.gbxEmpate.SuspendLayout();
@@ -78,6 +78,7 @@
             this.pnlBottom.Controls.Add(this.btn3);
             this.pnlBottom.Controls.Add(this.btn2);
             this.pnlBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBottom.Enabled = false;
             this.pnlBottom.Location = new System.Drawing.Point(0, 242);
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(744, 239);
@@ -88,6 +89,7 @@
             this.btn1.BackColor = System.Drawing.Color.Transparent;
             this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
             this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn1.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(224, 6);
             this.btn1.Name = "btn1";
@@ -100,6 +102,7 @@
             this.btn9.BackColor = System.Drawing.Color.Transparent;
             this.btn9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn9.BackgroundImage")));
             this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn9.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn9.Location = new System.Drawing.Point(416, 158);
             this.btn9.Name = "btn9";
@@ -112,6 +115,7 @@
             this.btn8.BackColor = System.Drawing.Color.Transparent;
             this.btn8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn8.BackgroundImage")));
             this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn8.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn8.Location = new System.Drawing.Point(320, 158);
             this.btn8.Name = "btn8";
@@ -124,6 +128,7 @@
             this.btn7.BackColor = System.Drawing.Color.Transparent;
             this.btn7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn7.BackgroundImage")));
             this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn7.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn7.Location = new System.Drawing.Point(224, 158);
             this.btn7.Name = "btn7";
@@ -136,6 +141,7 @@
             this.btn6.BackColor = System.Drawing.Color.Transparent;
             this.btn6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn6.BackgroundImage")));
             this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn6.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn6.Location = new System.Drawing.Point(416, 82);
             this.btn6.Name = "btn6";
@@ -148,6 +154,7 @@
             this.btn5.BackColor = System.Drawing.Color.Transparent;
             this.btn5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn5.BackgroundImage")));
             this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn5.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn5.Location = new System.Drawing.Point(320, 82);
             this.btn5.Name = "btn5";
@@ -160,6 +167,7 @@
             this.btn4.BackColor = System.Drawing.Color.Transparent;
             this.btn4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn4.BackgroundImage")));
             this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn4.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn4.Location = new System.Drawing.Point(224, 82);
             this.btn4.Name = "btn4";
@@ -172,6 +180,7 @@
             this.btn3.BackColor = System.Drawing.Color.Transparent;
             this.btn3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn3.BackgroundImage")));
             this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn3.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn3.Location = new System.Drawing.Point(416, 6);
             this.btn3.Name = "btn3";
@@ -184,6 +193,7 @@
             this.btn2.BackColor = System.Drawing.Color.Transparent;
             this.btn2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn2.BackgroundImage")));
             this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn2.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn2.Location = new System.Drawing.Point(320, 6);
             this.btn2.Name = "btn2";
@@ -259,12 +269,13 @@
             this.btnIniciar.TabIndex = 4;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // gbxPlacar
             // 
             this.gbxPlacar.BackColor = System.Drawing.Color.Transparent;
             this.gbxPlacar.Controls.Add(this.lblPJogador2);
-            this.gbxPlacar.Controls.Add(this.lblPJogador);
+            this.gbxPlacar.Controls.Add(this.lblPJogador1);
             this.gbxPlacar.Font = new System.Drawing.Font("Permanent Marker", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxPlacar.Location = new System.Drawing.Point(277, 12);
             this.gbxPlacar.Name = "gbxPlacar";
@@ -282,14 +293,14 @@
             this.lblPJogador2.Size = new System.Drawing.Size(0, 19);
             this.lblPJogador2.TabIndex = 1;
             // 
-            // lblPJogador
+            // lblPJogador1
             // 
-            this.lblPJogador.AutoSize = true;
-            this.lblPJogador.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPJogador.Location = new System.Drawing.Point(7, 36);
-            this.lblPJogador.Name = "lblPJogador";
-            this.lblPJogador.Size = new System.Drawing.Size(0, 19);
-            this.lblPJogador.TabIndex = 0;
+            this.lblPJogador1.AutoSize = true;
+            this.lblPJogador1.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPJogador1.Location = new System.Drawing.Point(7, 36);
+            this.lblPJogador1.Name = "lblPJogador1";
+            this.lblPJogador1.Size = new System.Drawing.Size(0, 19);
+            this.lblPJogador1.TabIndex = 0;
             // 
             // gbxOpcoes
             // 
@@ -332,9 +343,9 @@
             // 
             this.gbxJogadores.BackColor = System.Drawing.Color.Transparent;
             this.gbxJogadores.Controls.Add(this.txtJogador2);
-            this.gbxJogadores.Controls.Add(this.txtJogador);
+            this.gbxJogadores.Controls.Add(this.txtJogador1);
             this.gbxJogadores.Controls.Add(this.lblJogador2);
-            this.gbxJogadores.Controls.Add(this.lblJogador);
+            this.gbxJogadores.Controls.Add(this.lblJogador1);
             this.gbxJogadores.Font = new System.Drawing.Font("Permanent Marker", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxJogadores.Location = new System.Drawing.Point(12, 12);
             this.gbxJogadores.Name = "gbxJogadores";
@@ -351,31 +362,31 @@
             this.txtJogador2.Size = new System.Drawing.Size(211, 27);
             this.txtJogador2.TabIndex = 5;
             // 
-            // txtJogador
+            // txtJogador1
             // 
-            this.txtJogador.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJogador.Location = new System.Drawing.Point(13, 36);
-            this.txtJogador.Name = "txtJogador";
-            this.txtJogador.Size = new System.Drawing.Size(211, 27);
-            this.txtJogador.TabIndex = 4;
+            this.txtJogador1.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJogador1.Location = new System.Drawing.Point(13, 36);
+            this.txtJogador1.Name = "txtJogador1";
+            this.txtJogador1.Size = new System.Drawing.Size(211, 27);
+            this.txtJogador1.TabIndex = 4;
             // 
             // lblJogador2
             // 
             this.lblJogador2.AutoSize = true;
-            this.lblJogador2.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogador2.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJogador2.Location = new System.Drawing.Point(21, 75);
             this.lblJogador2.Name = "lblJogador2";
-            this.lblJogador2.Size = new System.Drawing.Size(0, 19);
+            this.lblJogador2.Size = new System.Drawing.Size(0, 21);
             this.lblJogador2.TabIndex = 1;
             // 
-            // lblJogador
+            // lblJogador1
             // 
-            this.lblJogador.AutoSize = true;
-            this.lblJogador.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJogador.Location = new System.Drawing.Point(21, 39);
-            this.lblJogador.Name = "lblJogador";
-            this.lblJogador.Size = new System.Drawing.Size(0, 19);
-            this.lblJogador.TabIndex = 0;
+            this.lblJogador1.AutoSize = true;
+            this.lblJogador1.Font = new System.Drawing.Font("Candara", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogador1.Location = new System.Drawing.Point(21, 39);
+            this.lblJogador1.Name = "lblJogador1";
+            this.lblJogador1.Size = new System.Drawing.Size(0, 21);
+            this.lblJogador1.TabIndex = 0;
             // 
             // FrmJogoDaVelha
             // 
@@ -384,7 +395,7 @@
             this.ClientSize = new System.Drawing.Size(744, 481);
             this.Controls.Add(this.pnlBottom);
             this.Controls.Add(this.pnlTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -413,14 +424,14 @@
         private System.Windows.Forms.GroupBox gbxJogadores;
         private System.Windows.Forms.GroupBox gbxPlacar;
         private System.Windows.Forms.Label lblPJogador2;
-        private System.Windows.Forms.Label lblPJogador;
+        private System.Windows.Forms.Label lblPJogador1;
         private System.Windows.Forms.GroupBox gbxOpcoes;
         private System.Windows.Forms.RadioButton rbtO;
         private System.Windows.Forms.RadioButton rbtX;
         private System.Windows.Forms.TextBox txtJogador2;
-        private System.Windows.Forms.TextBox txtJogador;
+        private System.Windows.Forms.TextBox txtJogador1;
         private System.Windows.Forms.Label lblJogador2;
-        private System.Windows.Forms.Label lblJogador;
+        private System.Windows.Forms.Label lblJogador1;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnReiniciar;
         private System.Windows.Forms.Button btnIniciar;
