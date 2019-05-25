@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmJogoDaVelha));
             this.pnlBottom = new System.Windows.Forms.Panel();
+            this.btn1 = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.txtJogador = new System.Windows.Forms.TextBox();
             this.lblJogador2 = new System.Windows.Forms.Label();
             this.lblJogador = new System.Windows.Forms.Label();
-            this.btn1 = new System.Windows.Forms.Button();
             this.pnlBottom.SuspendLayout();
             this.pnlTop.SuspendLayout();
             this.gbxEmpate.SuspendLayout();
@@ -82,6 +82,18 @@
             this.pnlBottom.Name = "pnlBottom";
             this.pnlBottom.Size = new System.Drawing.Size(744, 239);
             this.pnlBottom.TabIndex = 1;
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.Color.Transparent;
+            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
+            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn1.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(224, 6);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(90, 70);
+            this.btn1.TabIndex = 16;
+            this.btn1.UseVisualStyleBackColor = false;
             // 
             // btn9
             // 
@@ -226,6 +238,7 @@
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnReiniciar
             // 
@@ -364,18 +377,6 @@
             this.lblJogador.Size = new System.Drawing.Size(0, 19);
             this.lblJogador.TabIndex = 0;
             // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.Color.Transparent;
-            this.btn1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn1.BackgroundImage")));
-            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn1.Font = new System.Drawing.Font("Permanent Marker", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(224, 6);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(90, 70);
-            this.btn1.TabIndex = 16;
-            this.btn1.UseVisualStyleBackColor = false;
-            // 
             // FrmJogoDaVelha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +391,7 @@
             this.Name = "FrmJogoDaVelha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jodo Da Velha";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmJogoDaVelha_FormClosing);
             this.pnlBottom.ResumeLayout(false);
             this.pnlTop.ResumeLayout(false);
             this.gbxEmpate.ResumeLayout(false);

@@ -16,5 +16,20 @@ namespace ProjetoJVelha
         {
             InitializeComponent();
         }
+
+        private void FrmJogoDaVelha_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string msgAviso = "Deseja fechar o aplicativo Jogo da Velha?";
+
+            if (MessageBox.Show(msgAviso, "Aviso | Jogo da Velha!", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
