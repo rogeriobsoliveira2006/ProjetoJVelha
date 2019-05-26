@@ -96,6 +96,7 @@
             this.btn1.Size = new System.Drawing.Size(90, 70);
             this.btn1.TabIndex = 16;
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn9
             // 
@@ -109,6 +110,7 @@
             this.btn9.Size = new System.Drawing.Size(90, 70);
             this.btn9.TabIndex = 15;
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn8
             // 
@@ -122,6 +124,7 @@
             this.btn8.Size = new System.Drawing.Size(90, 70);
             this.btn8.TabIndex = 14;
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn7
             // 
@@ -135,6 +138,7 @@
             this.btn7.Size = new System.Drawing.Size(90, 70);
             this.btn7.TabIndex = 13;
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn6
             // 
@@ -148,6 +152,7 @@
             this.btn6.Size = new System.Drawing.Size(90, 70);
             this.btn6.TabIndex = 12;
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn5
             // 
@@ -161,6 +166,7 @@
             this.btn5.Size = new System.Drawing.Size(90, 70);
             this.btn5.TabIndex = 11;
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn4
             // 
@@ -174,6 +180,7 @@
             this.btn4.Size = new System.Drawing.Size(90, 70);
             this.btn4.TabIndex = 10;
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn3
             // 
@@ -187,6 +194,7 @@
             this.btn3.Size = new System.Drawing.Size(90, 70);
             this.btn3.TabIndex = 9;
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.cliqueXO);
             // 
             // btn2
             // 
@@ -200,6 +208,7 @@
             this.btn2.Size = new System.Drawing.Size(90, 70);
             this.btn2.TabIndex = 8;
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.cliqueXO);
             // 
             // pnlTop
             // 
@@ -233,10 +242,10 @@
             // lblEmpate
             // 
             this.lblEmpate.AutoSize = true;
-            this.lblEmpate.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpate.Location = new System.Drawing.Point(66, 59);
+            this.lblEmpate.Font = new System.Drawing.Font("Candara", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpate.Location = new System.Drawing.Point(20, 55);
             this.lblEmpate.Name = "lblEmpate";
-            this.lblEmpate.Size = new System.Drawing.Size(0, 19);
+            this.lblEmpate.Size = new System.Drawing.Size(0, 23);
             this.lblEmpate.TabIndex = 0;
             // 
             // btnSair
@@ -259,6 +268,7 @@
             this.btnReiniciar.TabIndex = 5;
             this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // btnIniciar
             // 
@@ -287,19 +297,19 @@
             // lblPJogador2
             // 
             this.lblPJogador2.AutoSize = true;
-            this.lblPJogador2.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPJogador2.Location = new System.Drawing.Point(7, 72);
+            this.lblPJogador2.Font = new System.Drawing.Font("Candara", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPJogador2.Location = new System.Drawing.Point(22, 73);
             this.lblPJogador2.Name = "lblPJogador2";
-            this.lblPJogador2.Size = new System.Drawing.Size(0, 19);
+            this.lblPJogador2.Size = new System.Drawing.Size(0, 23);
             this.lblPJogador2.TabIndex = 1;
             // 
             // lblPJogador1
             // 
             this.lblPJogador1.AutoSize = true;
-            this.lblPJogador1.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPJogador1.Location = new System.Drawing.Point(7, 36);
+            this.lblPJogador1.Font = new System.Drawing.Font("Candara", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPJogador1.Location = new System.Drawing.Point(22, 37);
             this.lblPJogador1.Name = "lblPJogador1";
-            this.lblPJogador1.Size = new System.Drawing.Size(0, 19);
+            this.lblPJogador1.Size = new System.Drawing.Size(0, 23);
             this.lblPJogador1.TabIndex = 0;
             // 
             // gbxOpcoes

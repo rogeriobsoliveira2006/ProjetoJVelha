@@ -44,6 +44,38 @@ namespace ProjetoJVelha
             }
 
             gbxOpcoes.Enabled = false;
+            pnlBottom.Enabled = true;
+
+            lblPJogador1.Text = "0 - Vitórias";
+            lblPJogador2.Text = "0 - Vitórias";
+            lblEmpate.Text = "0 - Empates";
+        }
+
+        private void cliqueXO(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+
+            if (rbtX.Checked)
+            {
+                jogada = rbtX.Text;
+                b.Text = jogada;
+                b.Enabled = false;
+                rbtO.Checked = true;
+            }
+            else
+            {
+                jogada = rbtO.Text;
+                b.Text = jogada;
+                b.Enabled = false;
+                rbtX.Checked = true;
+            }
+            cont++;
+            vencedorDoJogo();
+        }
+
+        private void btnReiniciar_Click(object sender, EventArgs e)
+        {
+            limparPartida();
         }
 
         private void FrmJogoDaVelha_FormClosing(object sender, FormClosingEventArgs e)
@@ -63,30 +95,103 @@ namespace ProjetoJVelha
 
         public void vencedorDoJogo()
         {
+            string jogador;
 
+            if ((btn1.Text.Equals(btn2.Text)) && (btn2.Text.Equals(btn3.Text)) && (!btn1.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn1.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }                
+            else if ((btn4.Text.Equals(btn5.Text)) && (btn5.Text.Equals(btn6.Text)) && (!btn4.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn4.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }                
+            else if ((btn7.Text.Equals(btn8.Text)) && (btn8.Text.Equals(btn9.Text)) && (!btn7.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn7.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            if (cont >= 9)
+            {
+                empates += 1;
+                lblEmpate.Text = $"{empates.ToString()} - Empates";
+                MessageBox.Show($"Deu Velha!!!!!", "Iiiiih!!!");
+                limparPartida();
+            }
         }
 
         public void limparPartida()
         {
-            foreach (Button b in Controls.OfType<Button>())
+            foreach (Control c in pnlBottom.Controls)
             {
-                if (!"btnIniciar".Equals(b.Name) && !"btnReiniciar".Equals(b.Name) && !"btnSair".Equals(b.Name))
+                
+                if (c is Button)
                 {
-                    b.Text = "";
+                    Button b = (Button)c;
+
+                    if (!"btnIniciar".Equals(b.Name) && !"btnReiniciar".Equals(b.Name) && !"btnSair".Equals(b.Name))
+                    {
+                        b.Text = "";
+                    }
                 }
                 
             }
+            cont = 0;
+            habilitarBotoes();
         }
 
         public void habilitarBotoes()
         {
-            foreach (Button b in Controls.OfType<Button>())
+            foreach (Control c in pnlBottom.Controls)
             {
-                if (!"btnIniciar".Equals(b.Name) && !"btnReiniciar".Equals(b.Name) && !"btnSair".Equals(b.Name))
-                {
-                    b.Enabled = true;
-                }
 
+                if (c is Button)
+                {
+                    Button b = (Button)c;
+
+                    if (!"btnIniciar".Equals(b.Name) && !"btnReiniciar".Equals(b.Name) && !"btnSair".Equals(b.Name))
+                    {
+                        b.Enabled = true;
+                    }
+                }
             }
         }
     }
