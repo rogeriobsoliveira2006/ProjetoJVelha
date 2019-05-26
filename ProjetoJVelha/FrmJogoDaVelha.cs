@@ -49,6 +49,7 @@ namespace ProjetoJVelha
             lblPJogador1.Text = "0 - Vitórias";
             lblPJogador2.Text = "0 - Vitórias";
             lblEmpate.Text = "0 - Empates";
+            btnIniciar.Enabled = false;
         }
 
         private void cliqueXO(object sender, EventArgs e)
@@ -97,6 +98,7 @@ namespace ProjetoJVelha
         {
             string jogador;
 
+            //Marcação Horizontal
             if ((btn1.Text.Equals(btn2.Text)) && (btn2.Text.Equals(btn3.Text)) && (!btn1.Enabled))
             {
                 if (lblJogador1.Text.Contains(btn1.Text))
@@ -149,6 +151,101 @@ namespace ProjetoJVelha
                 MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
                 limparPartida();
             }
+            //Fim Horinzontal
+
+            //Marcação Vertical
+            if ((btn1.Text.Equals(btn4.Text)) && (btn4.Text.Equals(btn7.Text)) && (!btn1.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn1.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            else if ((btn2.Text.Equals(btn5.Text)) && (btn5.Text.Equals(btn8.Text)) && (!btn2.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn2.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            else if ((btn3.Text.Equals(btn6.Text)) && (btn6.Text.Equals(btn9.Text)) && (!btn3.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn3.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            //Fim Vertical
+
+            //Marcação Diagonal
+            if ((btn1.Text.Equals(btn5.Text)) && (btn5.Text.Equals(btn9.Text)) && (!btn1.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn1.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            else if ((btn3.Text.Equals(btn5.Text)) && (btn5.Text.Equals(btn7.Text)) && (!btn7.Enabled))
+            {
+                if (lblJogador1.Text.Contains(btn3.Text))
+                {
+                    jogador = nJogador1;
+                    pJogador1 += 1;
+                    lblPJogador1.Text = $"{pJogador1.ToString()} - Vitórias";
+                }
+                else
+                {
+                    jogador = nJogador2;
+                    pJogador2 += 1;
+                    lblPJogador2.Text = $"{pJogador2.ToString()} - Vitórias";
+                }
+                MessageBox.Show($"O Jogador {jogador} Ganhou!", "Vencedor");
+                limparPartida();
+            }
+            //Fim Diagonal
+
             if (cont >= 9)
             {
                 empates += 1;
