@@ -22,34 +22,53 @@ namespace ProjetoJVelha
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            nJogador1 = txtJogador1.Text;
-            txtJogador1.Visible = false;
-            lblJogador1.Text = $"{nJogador1} -> [ Joga com ";
-            lblJogador1.Font = new Font(lblJogador1.Font, FontStyle.Bold | FontStyle.Italic);
-
-            nJogador2 = txtJogador2.Text;
-            txtJogador2.Visible = false;
-            lblJogador2.Text = $"{nJogador2} -> [ Joga com ";
-            lblJogador2.Font = new Font(lblJogador2.Font, FontStyle.Bold | FontStyle.Italic);
-
-            if (rbtX.Checked)
+            if (txtJogador1.Text.Equals(String.Empty))
             {
-                lblJogador1.Text += " X ]";
-                lblJogador2.Text += " O ]";
+                if (txtJogador2.Text.Equals(String.Empty))
+                    MessageBox.Show("Os Jogadores não foram informados !", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                    MessageBox.Show("O Jogador 1 não foi informado !", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                lblJogador1.Text += " O ]";
-                lblJogador2.Text += " X ]";
+                if (!txtJogador2.Text.Equals(String.Empty))
+                {
+                    nJogador1 = txtJogador1.Text;
+                    txtJogador1.Visible = false;
+                    lblJogador1.Text = $"{nJogador1} -> [ Joga com ";
+                    lblJogador1.Font = new Font(lblJogador1.Font, FontStyle.Bold | FontStyle.Italic);
+
+                    nJogador2 = txtJogador2.Text;
+                    txtJogador2.Visible = false;
+                    lblJogador2.Text = $"{nJogador2} -> [ Joga com ";
+                    lblJogador2.Font = new Font(lblJogador2.Font, FontStyle.Bold | FontStyle.Italic);
+
+                    if (rbtX.Checked)
+                    {
+                        lblJogador1.Text += " X ]";
+                        lblJogador2.Text += " O ]";
+                    }
+                    else
+                    {
+                        lblJogador1.Text += " O ]";
+                        lblJogador2.Text += " X ]";
+                    }
+
+                    gbxOpcoes.Enabled = false;
+                    pnlBottom.Enabled = true;
+
+                    lblPJogador1.Text = "0 - Vitórias";
+                    lblPJogador2.Text = "0 - Vitórias";
+                    lblEmpate.Text = "0 - Empates";
+                    btnIniciar.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("O Jogador 2 não foi informado !", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                
             }
-
-            gbxOpcoes.Enabled = false;
-            pnlBottom.Enabled = true;
-
-            lblPJogador1.Text = "0 - Vitórias";
-            lblPJogador2.Text = "0 - Vitórias";
-            lblEmpate.Text = "0 - Empates";
-            btnIniciar.Enabled = false;
+            
         }
 
         private void cliqueXO(object sender, EventArgs e)
